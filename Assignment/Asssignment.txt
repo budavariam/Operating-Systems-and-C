@@ -1,0 +1,18 @@
+Kurzus jelentkezés veszi kezdetét, a szervező meghirdeti a kurzust (szülő folyamat) az érdeklődő 1 (gyerek) és az érdeklődő 2 (gyerek) gondolkodik a jelnentkezésen.
+A szervező igyekszik válaszolni minden kérdésre és sikeresen elindítani a tervezett kurzust. 
+(Szülő bevárja a gyerek folyamatok végét, és végig fenntartja a kapcsolatot)
+
+1, A kurzus első meghirdetését követően a szervező (szülő) megvárja amig mind két további résztvevő ezen a megbezsélésen (gyerekek) 
+átolvassák a kiírást és megfogalmazzák kérdéseiket, majd jelzést küldenek ( signal ), hogy készen állnak a kezdésre. (Konzolra kiír) 
+Ezt követően a gyerek 1 csövön (pipe) keresztül feltesz egy kérdést a szervezőnek - 
+„Csak egy alkalom elérhető, vagy lesz több nap is?”. Amire csövön keresztül kap választ, hogy „Egyenlőre csak egy opcionális időpont van.” 
+(A kommunikáció konzolon kiírásra kerül)
+
+2, Ezt követően a 2. gyerek (message queue) hozzászól szintén a helyzethez, (szervezőhöz) 
+hogy „Rendben, nem a legjobb, de megoldható.” A szervező megjeleníti ezt szintén a konzolon.
+
+3, A 2. gyerek emellett azt is megjegyzi, hogy valószínűleg így is részt vesz, de szükséges lesz egy kis módosításra a naptárában 
+az elkövetkező hetekre emiatt (felvett tetszőleges változóval közöljük ezt az infromációt) amit osztott memóriába ír. 
+Ahonnan a szervező kiolvassa és megjeleníti.
+
+4, Védje szemaforral az osztott memória használatát.
